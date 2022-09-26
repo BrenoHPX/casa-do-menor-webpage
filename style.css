@@ -1,0 +1,323 @@
+*{
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #24084379;
+    position: fixed;
+    z-index: 2;
+}
+nav{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Exo 2', sans-serif;
+}
+/* ----SOBRE--------------------------------------------------------------------- */
+#sobre{
+    font-family: 'Exo 2', sans-serif;
+
+    background-image: url(./IMAGENS/backgroundImgTenis.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100vw;
+
+    display: grid;
+    grid-template-rows:10vw 30vw 10vw;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-areas: 
+    '. . .'
+    '. divSobre .'
+    '. . .';
+}
+ul{
+    list-style:none;
+    display: flex;
+    gap: 9vw;
+    width: 100vw;
+    font-size: 1.5vw;
+    margin: 0vw 0vw 0vw 25vw;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.divRedesSociais{
+    float: right;
+    display: flex;
+    margin-right: 3vw;
+}
+
+#iconeFacebook{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0.5vw;
+}
+
+#iconeInstagram{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0.5vw;
+}
+
+#divSobre{
+    grid-area: divSobre;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#logoCasaMenorVermelho{
+    width: 22vw;
+    margin: 2vw;
+}
+
+h2{
+    color: white;
+    font-weight: 300;
+    text-align:right;
+    margin-top: 1vw;
+    font-size: 3vw;
+}
+/* ----QUEM SOMOS--------------------------------------------------------------------- */
+#quemSomos{
+    background-image: url(./IMAGENS/backgroundClaro.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    height: 45vw;
+}
+
+#divQuemSomos{
+    position: absolute;
+    margin: 5vw;
+    text-align: center;
+}
+
+#quemSomosTitle{
+    margin: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    letter-spacing: 1vw;
+    margin-bottom: 4vw;
+}
+
+#quemSomos p{
+    font-size: 2vw;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 3.5vw;
+}
+
+#setaParaBaixo{
+    width: 9vw;
+    height: 3vw;
+    margin-top: 4.5vw;
+    opacity: 0.7;
+}
+/* ----PROJETOS--------------------------------------------------------------------- */
+#projetos{
+    background-image: url(./IMAGENS/backgroundImgSkate.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    height: 55vw;
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+    display: grid;
+    grid-template-rows:1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'imgSkatista textBox';
+    align-items: center;
+}
+
+#fotoSkatista{
+    width: 28vw;
+    margin: auto;
+    grid-area: imgSkatista;
+}
+
+#projetosTitle{
+    grid-area:textBox;
+    font-size: 2.6vw;
+    letter-spacing: 0.7vw;
+    margin-bottom: 3vw;
+}
+
+#iconeSkate{
+    width: 7vw;
+    vertical-align: middle;
+}
+
+#projetos p{
+    grid-area:textBox;
+    font-size: 1.7vw;
+    /* text-align: justify; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 3.5vw;
+    margin-right: 5vw;
+}
+
+/* ----DOAÇÕES--------------------------------------------------------------------- */
+
+#doacoes{
+    background-image: url(./IMAGENS/backgroundClaro.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 65vw;
+}
+
+#divDoacoes{
+    position: absolute;
+    margin: 5vw;
+    text-align: center;
+}
+
+#doacoesTitle{
+    margin: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    letter-spacing: 1vw;
+    margin-bottom: 4vw;
+}
+
+#doacoesText{
+    font-size: 1.7vw;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 3.5vw;
+}
+
+.doacoesPrincipais{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
+    align-items: center;
+    margin: 5vw 4vw 6vw 4vw; 
+}
+
+.topicosDoacoesPrincipais{
+    display: flex;
+}
+
+.topicosDoacoesPrincipais p{
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 2vw;
+    text-align: left;
+    margin: auto;
+}
+
+#iconeAlimentos{
+    width: 4vw;
+    padding: 2vw;
+    padding-right: 2vw;
+}
+#iconeProdutosHigiene{
+    width: 3vw;
+    padding: 2vw;
+    padding-right: 2.4vw;
+}
+#iconeRoupas{
+    width: 3vw;
+    padding: 2vw;
+    padding-right: 3vw;
+}
+#iconeProdutosLimpeza{
+    width: 4vw;
+    padding: 2vw;
+    padding-right: 2vw;
+}
+
+.doacoesPix p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6vw;
+    margin: 3vw;
+}
+
+#iconePix{
+    width: 4vw;
+    margin: 0 1vw 0;
+}
+
+/* ----CONTATO--------------------------------------------------------------------- */
+#contato{
+    background-image: url(./IMAGENS/backgrounRoxo.png);
+    background-size: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5vw;
+    align-items: center;
+    height: 25vw;
+    padding-top: 4vw;
+}
+
+#logoCasaMenorVermelhoContato{
+    width: 10vw;
+    margin-bottom: 3vw;;
+}
+
+.endereco{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4vw;
+    text-align: center;
+    line-height: 2vw;
+}
+#divRedesSociaisContato{
+    margin: 1vw;
+}
+
+#iconeFacebookContato{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0.5vw;
+}
+
+#iconeInstagramContato{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0.5vw;
+}
+
+#logoMooWoody{
+    width: 6vw;
+    margin-right: 3vw;
+}
+
+footer{
+    background-image: url(./IMAGENS/backgrounRoxo.png);
+    height: 3.5vw;
+}
+
+#logoMooWoodyAnchor{
+    float: right;
+    margin: 2vh 1vh 0vh 0vh;
+}
+
+#breno{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.76);
+    text-decoration: none;
+    float: left;
+    margin: 1vw;
+    font-size: 0.8vw;
+}
